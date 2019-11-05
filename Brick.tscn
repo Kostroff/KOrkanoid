@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Brick.gd" type="Script" id=1]
+[ext_resource path="res://Used resourses/EnergieBarColor2.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 23.4435, 8.06518 )
+
+[node name="Brick" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 3.05176e-005, 3.05176e-005 )
+scale = Vector2( 0.680541, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 3.05176e-005, 3.05176e-005 )
+scale = Vector2( 1.30519, 1.03469 )
+shape = SubResource( 1 )
