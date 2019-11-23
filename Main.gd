@@ -1,5 +1,7 @@
 extends Node2D
 
+#todo: Multiple resolutions https://docs.godotengine.org/en/3.1/tutorials/viewports/multiple_resolutions.html
+
 onready var brick_scene = preload("res://Brick.tscn")
 var player_score
 var window_size = Vector2(800, 600)
@@ -8,7 +10,6 @@ func _ready():
 	player_score = 0;
 	
 	# generate field of bricks
-	# todo: make resizeble window
 	var brick_instance = brick_scene.instance()
 	var brick_height = brick_instance._get_height()
 	var brick_width = brick_instance._get_width()

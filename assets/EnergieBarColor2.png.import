@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ball.png-226c6fce0e10e0d54ec2fe4bc9158c55.stex"
+path="res://.import/EnergieBarColor2.png-32299206dc1803ee644e947204da55fa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Used resourses/Ball.png"
-dest_files=[ "res://.import/Ball.png-226c6fce0e10e0d54ec2fe4bc9158c55.stex" ]
+source_file="res://assets/EnergieBarColor2.png"
+dest_files=[ "res://.import/EnergieBarColor2.png-32299206dc1803ee644e947204da55fa.stex" ]
 
 [params]
 

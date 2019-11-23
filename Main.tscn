@@ -23,13 +23,11 @@ script = ExtResource( 1 )
 position = Vector2( 406.709, 586.214 )
 scale = Vector2( 1.31614, 1.31614 )
 
-[node name="Ball" parent="." groups=[
-"balls",
-] instance=ExtResource( 3 )]
+[node name="Ball" parent="." instance=ExtResource( 3 )]
 position = Vector2( 400, 300 )
 speed = 150
 
-[node name="Hor_borders" type="Area2D" parent="."]
+[node name="Hor_borders" type="StaticBody2D" parent="."]
 
 [node name="B_UP" type="CollisionShape2D" parent="Hor_borders"]
 position = Vector2( 400, 0 )
@@ -39,7 +37,7 @@ shape = SubResource( 1 )
 position = Vector2( 400, 600 )
 shape = SubResource( 2 )
 
-[node name="Ver_borders" type="Area2D" parent="."]
+[node name="Ver_borders" type="StaticBody2D" parent="."]
 
 [node name="B_LEFT" type="CollisionShape2D" parent="Ver_borders"]
 position = Vector2( 0, 300 )
@@ -48,6 +46,3 @@ shape = SubResource( 3 )
 [node name="B_RIGHT" type="CollisionShape2D" parent="Ver_borders"]
 position = Vector2( 800, 300 )
 shape = SubResource( 4 )
-[connection signal="area_entered" from="Board" to="Ball" method="_on_Board_area_entered"]
-[connection signal="area_entered" from="Hor_borders" to="Ball" method="_on_Hor_borders_area_entered"]
-[connection signal="area_entered" from="Ver_borders" to="Ball" method="_on_Ver_borders_area_entered"]

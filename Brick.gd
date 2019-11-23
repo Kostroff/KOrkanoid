@@ -1,4 +1,4 @@
-extends Area2D
+extends StaticBody2D
 
 func _get_height():
 	return $Sprite.texture.get_height()*$Sprite.get_scale().y
